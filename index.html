@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claim Your Free Gift Cards</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f7fa;
+        color: #333;
+    }
+
+    .container {
+        max-width: 480px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 25px 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: #111;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .highlight {
+        color: #ff5722;
+        font-weight: bold;
+    }
+
+    .card-img-wrapper {
+        width: 100%;
+        margin: 15px 0;
+        border-radius: 12px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #e0e0e0;
+    }
+
+    .card-img-wrapper img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: contain;
+        display: block;
+    }
+
+    button {
+        width: 100%;
+        padding: 16px;
+        background: #4CAF50;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background 0.3s ease;
+    }
+
+    button:hover {
+        background: #45a049;
+    }
+
+    .steps {
+        text-align: left;
+        margin-top: 25px;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .steps li::before {
+        content: "✔ ";
+        color: #4CAF50;
+        font-weight: bold;
+    }
+
+    .steps li {
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .trust {
+        font-size: 0.85rem;
+        color: #777;
+        margin-top: 20px;
+    }
+
+    .loader {
+        display: none;
+        margin-top: 15px;
+    }
+
+    .loader img {
+        width: 50px;
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            padding: 20px 15px;
+            margin: 10px;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+        }
+
+        p, .steps li {
+            font-size: 0.95rem;
+        }
+
+        button {
+            font-size: 1rem;
+            padding: 14px;
+        }
+
+        .card-img-wrapper img {
+            max-height: 200px;
+        }
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <h1>Claim Your Free Gift Cards</h1>
+
+    <p>Complete a simple verification and instantly receive <span class="highlight">Amazon, Walmart, or Steam gift cards</span> worth up to <span class="highlight">$500</span>.</p>
+
+    <div class="card-img-wrapper">
+        <img src="image back/images.png" alt="Gift Cards Image">
+    </div>
+
+    <ul class="steps">
+        <li>Step 1: Click the button below</li>
+        <li>Step 2: Complete a simple task (survey or download)</li>
+        <li>Step 3: Instantly unlock your gift card reward and choose from a library of free gift cards</li>
+    </ul>
+
+    <button id="claimBtn">Unlock Your Gift Cards</button>
+
+    <div class="loader" id="loading">
+        <img src="https://i.imgur.com/LLF5iyg.gif" alt="Loading...">
+        <p>Verifying your action...</p>
+    </div>
+
+    <p class="trust">No credit card required. 100% free. Trusted by thousands worldwide.</p>
+
+</div>
+
+<script>
+    document.getElementById("claimBtn").addEventListener("click", function() {
+        document.getElementById("loading").style.display = "block";
+
+        // Short delay to simulate verification
+        setTimeout(() => {
+            window.location.href = "https://doctoredits.com/1856005"; // Replace with your CPA link
+        }, 2500);
+    });
+</script>
+
+</body>
+</html>
